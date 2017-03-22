@@ -4,3 +4,12 @@ title: Behiç Akgün - beh-HEECH AK-gyoon
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#Icons
+email_address: "behica@gmail.com"
+github: behica
+linkedin: https://www.linkedin.com/in/behic/
+
+
+#Scripts
+google_analytics: "UA-96057240-1" 
