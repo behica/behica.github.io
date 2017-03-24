@@ -1,6 +1,8 @@
 #Site Config
 baseurl: ""
 url: "https://www.behicakgun.com"
+collections:
+- projects
 
 # Site settings
 title: Behiç Akgün - beh-HEECH AK-gyoon
@@ -17,4 +19,4 @@ linkedin: https://www.linkedin.com/in/behic/
 
 
 #Scripts
-google_analytics: "UA-96057240-1" 
+google_analytics: "UA-96057240-1"
