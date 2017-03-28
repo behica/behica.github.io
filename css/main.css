@@ -70,6 +70,7 @@ h6 {
 }
 h1 {
 	font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
     margin-top: 0px;
     font-size: 2rem;
 
