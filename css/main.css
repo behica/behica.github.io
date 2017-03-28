@@ -143,6 +143,7 @@ hr {
 	padding-left: 0;
 }
 .nav ul li {
+    font-family: 'Oswald', sans-serif;
 	margin-right: 20px;
 	display: inline-block;
 }
