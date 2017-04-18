@@ -83,12 +83,14 @@ a {
 }
 ol li,
 ul li {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1 rem;
   margin-top: 0px;
 	margin-bottom: .75rem;
 }
 blockquote p{
   border-left: none;
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1  rem;
   line-height: 1.35;
   padding-left: .75rem;

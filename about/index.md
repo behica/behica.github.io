@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-This is my as simple as possible base Jekyll theme.
+This site started on a simple as possible base Jekyll theme.
 
 In January of 2017, I began my apprenticeship in Bloc's full-stack web developer program. In a former life, I worked as a sales operations specialist focusing on data visualization, analytics, CRM building and process optimization.
 
