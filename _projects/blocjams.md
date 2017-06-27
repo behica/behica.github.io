@@ -10,7 +10,7 @@ thumbnail: "/img/bj-ng/BJng-homepage.PNG"
 The origin of Bloc Jams was to build a digital music player (ex. Spotify, Google Music) as a method to learning frontend web development.
 
 {:.center}
-![]({{ site.baseurl }}/img/bj-ng/BJng-homepage.png)
+![]({{ site.baseurl }}/img/bj-ng/BJng-homepage.PNG)
 
 ## About
 
