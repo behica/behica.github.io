@@ -14,7 +14,7 @@ The origin of Bloc Jams was to build a digital music player (ex. Spotify, Google
 
 ## About
 
-In its original form, Bloc Jams was laid out with HTML, styled and made responsive with CSS, and implemented with JavaScript and jQuery. In its next form. Bloc Jams was re-factored to utilize AngularJS to create a seamless, single-page-application experience for the user.
+In its original form, Bloc Jams was laid out with HTML, styled and made responsive with CSS, and implemented with JavaScript and jQuery. In its next form, Bloc Jams was re-factored to utilize AngularJS to create a seamless, single-page-application experience for the user.
 
 ## Learning by Doing
 
