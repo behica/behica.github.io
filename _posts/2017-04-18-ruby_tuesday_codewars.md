@@ -33,7 +33,7 @@ The details are simple:
 One of the things that connects my past as a business analyst and my future as a coder is laying a foundation for what the solution is trying to accomplish. Planning out, step-by-step, in pseudo-code is important early on so you can reinforce patterns that may emerge. Let’s take a look at how that played out with this kata.
 
 We are given a starting point:
-```
+```ruby
 def most_frequent_item_count(collection)
   # Do your magic. :)
 end
@@ -41,7 +41,7 @@ end
 
 Looking at this, `collection` will be our array, so there’s no need to define it elsewhere. We do know that we are looking for a count, so let’s add that portion to our code.
 
-```
+```ruby
 def most_frequent_item_count(collection)
   count = 0
 end
@@ -51,7 +51,7 @@ I’ve started a variable, `count`, at 0 with the intention of increasing it as 
 
 In Ruby, this becomes simple. Using the `.each` method on `collection`, and turning `count` into a hash, or object, I am able to store my integer counts as keys and values.
 
-```
+```ruby
 def most_frequent_item_count(collection)
   count = Hash.new(0)
 
@@ -61,7 +61,7 @@ end
 
 `count = Hash.new(0)` turns our variable into a hash, with default key values of 0. The `.each` method takes each item in the array, `i`, and adds them to the `count` hash. Each time it is present in the array, its value is increased by 1. Awesome. We have our hash, and frequencies of each number logged. Now we need a way to figure out the highest value. Luckily, Ruby has an easy way of doing this as well.
 
-```
+```ruby
 def most_frequent_item_count(collection)
   count = Hash.new(0)
 
@@ -73,7 +73,7 @@ end
 I iterate through each `key` and `value` (`k` and `v`). Then Ruby’s simple, almost spoken-language-like code comes into play. Iterating through each key and value combination (in this case, the integer and its count) I want to return the value if it is the greatest / maximum value present within that hash. `return v` tells me I want to return value; `if v ==` tells the code to return the value if `v`’s condition is met, and the condition we’re looking for is the largest value (highest frequency) present with `count.values.max`. Cool, huh?
 
 There are obviously more elegant solutions, and you are able to look through these once you’ve completed your kata and refactoring upon passing all of the automatic tests the system puts your code through. For example, the best practice (as voted on by users) for the question here is listed as:
-```
+```ruby
 def most_frequent_item_count(c)
   c.count(c.max_by{|x| c.count(x)})
 end

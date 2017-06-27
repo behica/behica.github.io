@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /thank-you/
-hide: true
+exclude: true
 ---
 
-Thank you for reaching out!
+<p>Thank you for reaching out!</p>

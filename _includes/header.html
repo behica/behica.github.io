@@ -1,8 +1,11 @@
 <nav class="nav">
 	<ul>
+	{% assign sorted_pages = site.pages | sort:"order" %}
 		<li><a href="/">{{ site.title }}</a></li>
-		{% for page in site.pages %}
-		<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-		{% endfor %}
+	{% for page in sorted_pages %}
+		{% unless page.exclude %}
+			<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+		{% endunless %}
+	{% endfor %}
 	</ul>
 </nav>

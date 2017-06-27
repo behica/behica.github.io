@@ -2,14 +2,15 @@
 baseurl: ""
 url: "https://www.behicakgun.com"
 collections:
-- projects
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 # Site settings
 title: BehicAkgun.com
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
 permalink: pretty
 
 #Icons

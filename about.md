@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+order: 2
 ---
 
 This site started on a simple as possible base Jekyll theme.
