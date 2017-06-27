@@ -110,8 +110,8 @@ hr {
 
 .highlighter-rouge { font-size: .95em; background-color: #f1f1f1; }
 
-.highlight pre {
-	white-space: pre-wrap;
+pre {
+  white-space: pre-wrap;
 }
 
 /*
