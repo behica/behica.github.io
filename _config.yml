@@ -1,6 +1,6 @@
 #Site Config
 baseurl: ""
-url: "https://www.behicakgun.com"
+url: "http://www.behicakgun.com"
 collections:
   projects:
     output: true
