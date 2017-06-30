@@ -131,6 +131,10 @@ pre {
 
 .highlighter-rouge { font-size: .95em; background-color: #f1f1f1; }
 
+pre {
+  white-space: pre-wrap;
+}
+
 /*
  * Navigation
  */
