@@ -3,7 +3,7 @@ layout: post
 title:  "Ruby Tuesday – CodeWars Edition"
 ---
 
-The curriculum at [Bloc](https://bloc.io) is checkpoint driven. Checkpoints are clear-cut stops on your learning roadmap dedicated to explaining a particular subject related to language syntax, code theory or computer science in general. For example, I started this week off completing my introduction to Rails which consisted of:
+The curriculum at [Bloc](https://bloc.io) is checkpoint driven. Checkpoints are clear-cut stops on your learning roadmap dedicated to explaining a particular subject related to language syntax, code theory or computer science in general. For example, I started this week off completing my introduction to Rails <!--more-->which consisted of:
 
 - Explaining how Ruby compliments Rails
 - How to create the basic file structure and databases

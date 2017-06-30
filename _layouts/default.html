@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 {% include head.html %}
-
   <body>
     <div class="container">
-
-      {% include header.html %}
-	  
-      {{ content }}
-
-  	</div>
-
-    {% include footer.html %}
-    {% include analytics.html %}
+      <main class='flex flex-column min-vh-100'>
+        <header class='mt4 mb4 f4'>
+          {% include header.html %}
+        </header>
+        <section class='flex-auto'>
+          {{ content }}
+        </section>
+        <footer class='mb3 center'>
+          {% include footer.html %}
+          {% include analytics.html %}
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

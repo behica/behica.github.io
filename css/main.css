@@ -3,6 +3,7 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
 * {
 	-webkit-box-sizing: border-box;
@@ -15,26 +16,34 @@ html {
 }
 @media (min-width:768px) {
 	html {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 body {
 	font-size: 1em;
-	line-height: 1.35;
+	/*line-height: 1.35;*/
 	font-family: Helvetica, sans-serif;
-    margin-top: 40px;
-    margin-bottom: 80px;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+	/*margin-top: 40px;
+  margin-bottom: 80px;*/
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 img {
-    width: 100%;
+  width: 100%;
 	height: auto;
 	border-radius: 3px;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .half-size { margin: auto; display: block; max-width: 40%}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
 
 /*
  * The Grid
@@ -43,7 +52,7 @@ img {
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 780px;
+  max-width: 720px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -53,11 +62,10 @@ img {
  */
 
 p {
-    font-family: 'Quattrocento', serif;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: px;
-    margin-top: 0;
+  font-family: 'Work Sans', serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
 	margin-bottom: 1rem;
 }
 
@@ -75,7 +83,7 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 1px;
   margin-top: 0px;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 h2 {
 	font-family: 'Oswald', sans-serif;
@@ -89,8 +97,7 @@ ol li,
 ul li {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1 rem;
-  margin-top: 0px;
-	margin-bottom: .75rem;
+	margin: 1em;
 }
 blockquote p{
   border-left: none;
@@ -108,19 +115,63 @@ hr {
 	margin-bottom: 40px;
 }
 
+label, input, textarea {
+	display: block;
+  font-family: 'Work Sans', sans-serif;
+  font-size: inherit;
+	margin-bottom: 5px;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+.project {
+	overflow: hidden;
+}
+
 .highlighter-rouge { font-size: .95em; background-color: #f1f1f1; }
 
 /*
  * Navigation
  */
-
-.nav {
-  margin-bottom: 40px;
+h1 a {
+	text-decoration: none;
+  position: relative;
+  color: #222;
 }
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+h1 a:before {
+	content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F00;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h1 a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*.nav {
+  margin-bottom: 40px;
+}*/
 .nav a {
 	text-decoration: none;
-    position: relative;
-    color: #222;
+  position: relative;
+  color: #222;
 }
 
 .nav a:hover {
@@ -129,23 +180,23 @@ hr {
 
 .nav a:before {
 	content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #F00;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F00;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .nav a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .nav ul {
@@ -153,7 +204,7 @@ hr {
 	padding-left: 0;
 }
 .nav ul li {
-    font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif;
 	margin-right: 20px;
 	display: inline-block;
 }
