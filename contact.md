@@ -13,7 +13,5 @@ order: 3
     <input type='email' class='ba f6 b--black-20 pa2 mb2 db w-50' name='email' placeholder='Your E-mail Address' />
     <label>Message</label>
     <textarea class='db f6 border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2' name='message' placeholder='Write your message ...'></textarea>
-  <div>
-    <input class='bn bg-gray pa2 br2 white hover-bg-green pointer' type='submit' value='Send Message' />
-  </div>
+    <input class='bn mt3 bg-gray pa2 br2 white hover-bg-green pointer' type='submit' value='Send Message' />
 </form>
