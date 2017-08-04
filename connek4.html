@@ -26,7 +26,7 @@
 <div class="container-fluid fill text-center">
   <h1>Connek 4 discs in a row to win!</h1>
   <h3><span class="turn_for">Player 1</span>'s turn</h3>
-  <div class="row">
+  <div class="row" id="a">
     <div class="col-md-12 col-xs-12">
       <a class="btn btn-default" id="0"></a>
       <a class="btn btn-default" id="1"></a>
@@ -37,7 +37,7 @@
       <a class="btn btn-default" id="6"></a>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="b">
     <div class="col-md-12 col-xs-12">
       <a class="btn btn-default" id="7"></a>
       <a class="btn btn-default" id="8"></a>
@@ -48,7 +48,7 @@
       <a class="btn btn-default" id="13"></a>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="c">
     <div class="col-md-12 col-xs-12">
       <a class="btn btn-default" id="14"></a>
       <a class="btn btn-default" id="15"></a>
@@ -59,7 +59,7 @@
       <a class="btn btn-default" id="20"></a>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="d">
     <div class="col-md-12 col-xs-12">
       <a class="btn btn-default" id="21"></a>
       <a class="btn btn-default" id="22"></a>
@@ -70,7 +70,7 @@
       <a class="btn btn-default" id="27"></a>
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="e">
     <div class="col-md-12 col-xs-12">
       <a class="btn btn-default" id="28"></a>
       <a class="btn btn-default" id="29"></a>
@@ -81,7 +81,7 @@
       <a class="btn btn-default" id="34"></a>
     </div>
   </div>
-  <div class="row">
+  <div class="row f">
     <div class="col-md-12 col-xs-12">
       <a class="btn btn-default" id="35"></a>
       <a class="btn btn-default" id="36"></a>
@@ -129,32 +129,42 @@ $(document).ready(function(){
       $('#'+id_above).addClass('open')
       $('span.turn_for').text("Player 1")
     }
-    console.log(board);
+    console.log($(this).closest("div").prop("id"));
+    
   });
   
   function check_winner(add_chip){
     var player = $('span.turn_for').text();
+    
     for(x=0; x < board.length; x++){
-      if( $('#'+x).hasClass(add_chip) && $('#'+(x+1)).hasClass(add_chip) && $('#'+(x+2)).hasClass(add_chip) && $('#'+(x+3)).hasClass(add_chip)){
-        if(!alert(player + ' wins!!!')){window.location.reload();}
-      }
+      if( ($('#'+x).hasClass(add_chip) && $('#'+(x+1)).hasClass(add_chip) && $('#'+(x+2)).hasClass(add_chip) && $('#'+(x+3)).hasClass(add_chip)) && ($('#'+x).closest("div.row").prop("id") == $('#'+(x+3)).closest("div.row").prop("id"))){
+        alert(player + ' wins!!!');
+        location.reload();
+        return
+      }  
     }
     
     for(y=0; y < board.length; y++){
       if($('#'+y).hasClass(add_chip) && $('#'+(y+7)).hasClass(add_chip) && $('#'+(y+14)).hasClass(add_chip) && $('#'+(y+21)).hasClass(add_chip)){
-        if(!alert(player + ' wins!!!')){window.location.reload();}
+        alert(player + ' wins!!!');
+        location.reload();
+        return
       }
     }
     
     for(d=0; d < board.length; d++){
       if($('#'+d).hasClass(add_chip) && $('#'+(d+8)).hasClass(add_chip) && $('#'+(d+16)).hasClass(add_chip) && $('#'+(d+24)).hasClass(add_chip)){
-        if(!alert(player + ' wins!!!')){window.location.reload();}
+        alert(player + ' wins!!!');
+        location.reload();
+        return
       }
     }
     
     for(z=0; z < board.length; z++){
       if($('#'+z).hasClass(add_chip) && $('#'+(z+6)).hasClass(add_chip) && $('#'+(z+12)).hasClass(add_chip) && $('#'+(z+18)).hasClass(add_chip)){
-        if(!alert(player + ' wins!!!')){window.location.reload();}
+        alert(player + ' wins!!!');
+        location.reload();
+        return
       }
     }
   }
