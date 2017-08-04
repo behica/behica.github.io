@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Connek Four</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    html,body{
+      height: 100%;
+    }
+    .full-height, .full-height .container-fluid{
+      height: 100%;
+    }
+    .btn {
+      width: 10vw; 
+      height: 10vw; 
+    }
+    .btn-danger {
+      border-radius: 50%;
+    }
+    
+    .btn-warning {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid full-height text-center">
+  <h1>Connek 4 discs in a row to win!</h1>
+  <h3><span class="turn_for">Player 1</span>'s turn</h3>
+  <div class="row">
+    <div class="col-sm-12">
+      <a class="btn btn-default" id="0"></a>
+      <a class="btn btn-default" id="1"></a>
+      <a class="btn btn-default" id="2"></a>
+      <a class="btn btn-default" id="3"></a>
+      <a class="btn btn-default" id="4"></a>
+      <a class="btn btn-default" id="5"></a>
+      <a class="btn btn-default" id="6"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <a class="btn btn-default" id="7"></a>
+      <a class="btn btn-default" id="8"></a>
+      <a class="btn btn-default" id="9"></a>
+      <a class="btn btn-default" id="10"></a>
+      <a class="btn btn-default" id="11"></a>
+      <a class="btn btn-default" id="12"></a>
+      <a class="btn btn-default" id="13"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <a class="btn btn-default" id="14"></a>
+      <a class="btn btn-default" id="15"></a>
+      <a class="btn btn-default" id="16"></a>
+      <a class="btn btn-default" id="17"></a>
+      <a class="btn btn-default" id="18"></a>
+      <a class="btn btn-default" id="19"></a>
+      <a class="btn btn-default" id="20"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <a class="btn btn-default" id="21"></a>
+      <a class="btn btn-default" id="22"></a>
+      <a class="btn btn-default" id="23"></a>
+      <a class="btn btn-default" id="24"></a>
+      <a class="btn btn-default" id="25"></a>
+      <a class="btn btn-default" id="26"></a>
+      <a class="btn btn-default" id="27"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <a class="btn btn-default" id="28"></a>
+      <a class="btn btn-default" id="29"></a>
+      <a class="btn btn-default" id="30"></a>
+      <a class="btn btn-default" id="31"></a>
+      <a class="btn btn-default" id="32"></a>
+      <a class="btn btn-default" id="33"></a>
+      <a class="btn btn-default" id="34"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <a class="btn btn-default" id="35"></a>
+      <a class="btn btn-default" id="36"></a>
+      <a class="btn btn-default" id="37"></a>
+      <a class="btn btn-default" id="38"></a>
+      <a class="btn btn-default" id="39"></a>
+      <a class="btn btn-default" id="40"></a>
+      <a class="btn btn-default" id="41"></a>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  var board = document.getElementsByClassName('btn');
+  var red = 'btn-danger';
+  var yellow = 'btn-warning'
+  var add_chip = red
+  console.log(board);
+  
+  $('a').click(function(){
+    id_clicked = $(this).attr('id');
+    id_above = $(this).attr('id') - 7;
+    
+    //Check if space filled or playable
+    if((id_clicked < 35 && !$(this).hasClass('open')) || $(this).hasClass(red) || $(this).hasClass(yellow))
+      return false;
+    
+    //Check chip color / player #
+    
+    else if(add_chip == red){
+      $(this).removeClass('btn-default');
+      $(this).removeClass('open');      
+      $(this).addClass(add_chip);
+      check_winner(add_chip);
+      add_chip = yellow;
+      $('#'+id_above).addClass('open')
+      check_winner(add_chip);
+      $('span.turn_for').text("Player 2")
+    } else if(add_chip == yellow){
+      $(this).removeClass('btn-default');
+      $(this).removeClass('open');
+      $(this).addClass(add_chip);
+      check_winner(add_chip);
+      add_chip = red;
+      $('#'+id_above).addClass('open')
+      $('span.turn_for').text("Player 1")
+    }
+    console.log(board);
+  });
+  
+  function check_winner(add_chip){
+    var player = $('span.turn_for').text();
+    for(x=0; x < board.length; x++){
+      if( $('#'+x).hasClass(add_chip) && $('#'+(x+1)).hasClass(add_chip) && $('#'+(x+2)).hasClass(add_chip) && $('#'+(x+3)).hasClass(add_chip)){
+        if(!alert(player + ' wins!!!')){window.location.reload();}
+      }
+    }
+    
+    for(y=0; y < board.length; y++){
+      if($('#'+y).hasClass(add_chip) && $('#'+(y+7)).hasClass(add_chip) && $('#'+(y+14)).hasClass(add_chip) && $('#'+(y+21)).hasClass(add_chip)){
+        if(!alert(player + ' wins!!!')){window.location.reload();}
+      }
+    }
+    
+    for(d=0; d < board.length; d++){
+      if($('#'+d).hasClass(add_chip) && $('#'+(d+8)).hasClass(add_chip) && $('#'+(d+16)).hasClass(add_chip) && $('#'+(d+24)).hasClass(add_chip)){
+        if(!alert(player + ' wins!!!')){window.location.reload();}
+      }
+    }
+    
+    for(z=0; z < board.length; z++){
+      if($('#'+z).hasClass(add_chip) && $('#'+(z+6)).hasClass(add_chip) && $('#'+(z+12)).hasClass(add_chip) && $('#'+(z+18)).hasClass(add_chip)){
+        if(!alert(player + ' wins!!!')){window.location.reload();}
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
