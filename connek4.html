@@ -99,7 +99,6 @@ $(document).ready(function(){
   var red = 'btn-danger';
   var yellow = 'btn-warning'
   var add_chip = red
-  console.log(board);
   
   $('a').click(function(){
     id_clicked = $(this).attr('id');
@@ -129,14 +128,14 @@ $(document).ready(function(){
       $('#'+id_above).addClass('open')
       $('span.turn_for').text("Player 1")
     }
-    console.log($(this).closest("div").prop("id"));
+    console.log(board);
     
   });
   
   function check_winner(add_chip){
     var player = $('span.turn_for').text();
     
-    for(x=0; x < board.length; x++){
+    for(var x=0; x < board.length; x++){
       if( ($('#'+x).hasClass(add_chip) && $('#'+(x+1)).hasClass(add_chip) && $('#'+(x+2)).hasClass(add_chip) && $('#'+(x+3)).hasClass(add_chip)) && ($('#'+x).closest("div.row").prop("id") == $('#'+(x+3)).closest("div.row").prop("id"))){
         alert(player + ' wins!!!');
         location.reload();
@@ -144,7 +143,7 @@ $(document).ready(function(){
       }  
     }
     
-    for(y=0; y < board.length; y++){
+    for(var y=0; y < board.length; y++){
       if($('#'+y).hasClass(add_chip) && $('#'+(y+7)).hasClass(add_chip) && $('#'+(y+14)).hasClass(add_chip) && $('#'+(y+21)).hasClass(add_chip)){
         alert(player + ' wins!!!');
         location.reload();
@@ -152,7 +151,9 @@ $(document).ready(function(){
       }
     }
     
-    for(d=0; d < board.length; d++){
+    //Check diagonal right
+    for(var d=0; d < 18; d++){
+      if((d >= 4 && d <= 6) || (d>=11 && d<=13)){continue;}
       if($('#'+d).hasClass(add_chip) && $('#'+(d+8)).hasClass(add_chip) && $('#'+(d+16)).hasClass(add_chip) && $('#'+(d+24)).hasClass(add_chip)){
         alert(player + ' wins!!!');
         location.reload();
@@ -160,7 +161,9 @@ $(document).ready(function(){
       }
     }
     
-    for(z=0; z < board.length; z++){
+    //Check diagonal left
+    for(var z=3; z < 21; z++){
+      if((z >= 7 && z <= 9) || (z>=14 && z<=16)){continue;}
       if($('#'+z).hasClass(add_chip) && $('#'+(z+6)).hasClass(add_chip) && $('#'+(z+12)).hasClass(add_chip) && $('#'+(z+18)).hasClass(add_chip)){
         alert(player + ' wins!!!');
         location.reload();
