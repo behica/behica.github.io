@@ -9,7 +9,9 @@ order: 1
     <center>
     <h1 class='pa2'><a href="{{ project.url }}">{{ project.title }}</a></h1>
     <div class='project'>
-      <a href="{{ project.url }}"><img class='dim' src="{{ project.thumbnail }}" /></a>
+    <a href="{{ project.url }}"><img class='dim' src="{{ project.thumbnail }}" /></a>
+    <br>
+    <br>
     </div>
     </center>
   </article>
