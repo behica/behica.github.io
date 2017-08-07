@@ -2,10 +2,10 @@
 layout: page
 title: Connek4
 short-description: A Connect 4 clone demonstrating jQuery, made within a couple of hours for an assignment given without detailed requirements.
-thumbnail: "/img/connek4.png"
+thumbnail: "/img/connek4.PNG"
 ---
 
-![]({{ site.baseurl }}/img/connek4.png)
+![]({{ site.baseurl }}/img/connek4.PNG)
 
 ## Summary
 
