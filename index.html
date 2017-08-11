@@ -1,13 +1,32 @@
 ---
 layout: default
 ---
-
-{% for post in site.posts %}
-	<article>
-		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		<p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
-		<p>{{ post.excerpt | truncatewords: 50 }}</p>
-		<p class="f7"><a href="{{ post.url }}">Read full post</p></a>
-	</article>
-	<hr>
-{% endfor %}
+{% assign post = site.posts.first %}
+<article>
+  <div class="tc">
+    <h2>Hello, my name is Behiç.</h2>
+    <p>/be-<span class="underline">HEECH</span>/</p>
+    <p>I am a former sales ops leader who has morphed into a web developer. Over the years, I've mentored people, built processes, transitioned CRMs, provided trainings, modeled data, and made sure we were doing it the best way possible. I wanted to get in the world of creating the code behind experiences with technology. Welcome to my journey.</p>
+  </div>
+  <div class="mw9 center">
+  <div class="cf ph1-ns">
+    <div class="fl w-100 w-third-ns pa2 tc">
+      <i class="blue fa fa-code"></i>
+      <p class="f7">I have experience with HTML5, CSS3, JavaScript, jQuery, Angular, Ruby and Ruby on Rails.</p>
+    </div>
+    <div class="fl w-100 w-third-ns pa2 tc">
+      <i class="gold fa fa-lightbulb-o" aria-hidden="true"></i>
+      <p class="f7">I love to ideate. Have an idea you want to discuss? Let's collaborate, nurture it, and help it grow.</p>
+    </div>
+    <div class="fl w-100 w-third-ns pa2 tc">
+      <i class="green fa fa-level-up" aria-hidden="true"></i>
+      <p class="f7">A former hobbiest, I completed <a href="http://bloc.io">Bloc's</a> web development curriculum to level up my skills.</p>
+    </div>
+  </div>
+</div>
+  <hr>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
+  <p>{{ post.excerpt | truncatewords: 50 }}</p>
+  <p class="f7"><a href="{{ post.url }}">Read full post</a></p>
+</article>

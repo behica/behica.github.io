@@ -2,6 +2,9 @@
 baseurl: ""
 url: "http://www.behicakgun.com"
 collections:
+  posts:
+    output: true
+    permalink: /posts/:path/
   portfolio:
     output: true
     permalink: /portfolio/:path/
