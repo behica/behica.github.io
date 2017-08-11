@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Contact
+title: Contact Me
 permalink: /contact/
 order: 3
 ---
 
-<form class='pt3 black-80' action="https://getsimpleform.com/messages?form_api_token=f03e70e81be4a6ba5d7c6b6483ab89a9" method="post">
+<p class="f4 pt3 pb2">Why yes, I would love to hear from you.</p>
+
+<form class='black-80' action="https://getsimpleform.com/messages?form_api_token=f03e70e81be4a6ba5d7c6b6483ab89a9" method="post">
   <input type='hidden' name='redirect_to' value='http://behicakgun.com/thank-you' />
     <label>Name</label>
     <input type='text' class='ba f6 b--black-20 pa2 mb2 db w-50' name='name' placeholder='Your Full Name' />

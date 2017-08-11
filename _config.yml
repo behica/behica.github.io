@@ -2,9 +2,9 @@
 baseurl: ""
 url: "http://www.behicakgun.com"
 collections:
-  projects:
+  portfolio:
     output: true
-    permalink: /projects/:path/
+    permalink: /portfolio/:path/
 
 # Site settings
 title: BehicAkgun.com

@@ -9,6 +9,8 @@ thumbnail: "/img/bj-ng/BJng-homepage.PNG"
 
 The origin of Bloc Jams was to build a digital music player (ex. Spotify, Google Music) as a method to learning frontend web development.
 
+You can see it in action here --> [BlocJams](https://milodi.herokuapp.com/)*
+
 {:.center}
 ![]({{ site.baseurl }}/img/bj-ng/BJng-homepage.PNG)
 
@@ -65,5 +67,3 @@ What went from a simple lesson on where to place `div` tags and how to build a `
 It's what I came here for.
 
 *Bloc Jams was completed toward the beginning of the curriculum at Bloc - February 2017. This post was written in June 2017.
-
-You can see it in action here --> [BlocJams](https://milodi.herokuapp.com/)*
