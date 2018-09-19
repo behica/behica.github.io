@@ -1,6 +1,7 @@
 #Site Config
 baseurl: ""
 url: "http://www.behicakgun.com"
+description: "Sales Operations pro who dabbles in web development, writing and photography to expand his creativity and pursue a life well lived."
 collections:
   posts:
     output: true

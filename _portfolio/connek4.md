@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Connek4
-short-description: A Connect Four clone demonstrating jQuery, made within a couple of hours for an assignment given without detailed requirements.
+description: A Connect Four clone demonstrating jQuery, made within a couple of hours for an assignment given without detailed requirements.
 thumbnail: "/img/connek4.PNG"
 ---
 ## Summary
