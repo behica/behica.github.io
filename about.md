@@ -5,7 +5,7 @@ permalink: /about/
 order: 2
 ---
 <div class="tc pb3">
-  <img class="pa4 mw5-ns br3 fl" src="/img/behic.jpg">
+  <img class="pa4 mw5-ns br-100 fl" src="/img/behic.jpg">
 </div>
 
 In January of 2017, I began my apprenticeship in [Bloc's](https://bloc.io) full-stack web developer program. Interactive technology has always captured my imagination -- from my cousin's C64 to running my first BBS to building system requirements which would impact thousands of associates, and so much more.
