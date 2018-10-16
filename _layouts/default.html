@@ -3,18 +3,14 @@
 {% include head.html %}
   <body>
     <div class="container">
-      <main class='flex flex-column min-vh-100'>
-        <header class='tc mt1 mb3'>
-          {% include header.html %}
-        </header>
-        <section class='fl w-100 flex-auto'>
-          {{ content }}
-        </section>
-        <footer class='mb3 tc'>
-          {% include footer.html %}
-          {% include analytics.html %}
-        </footer>
-      </main>
+        {% include header.html %}
+      <section class='content'>
+        {{ content }}
+      </section>
+      <footer>
+        {% include footer.html %}
+        {% include analytics.html %}
+      </footer>
     </div>
   </body>
 </html>
