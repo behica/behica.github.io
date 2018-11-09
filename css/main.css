@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento');
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
 	-webkit-box-sizing: border-box;
@@ -13,8 +15,8 @@
 html, body {
 	font-size: 1em;
 	background-color: #fdfdfd;
-	line-height: 1.35;
-  font-family: 'Work sans', sans-serif;
+	line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -30,6 +32,11 @@ img {
   margin: auto;
   display: block;
   max-width: 40%
+}
+
+.post_preview {
+
+	max-width: 60%
 }
 
 /* Icons */
@@ -156,10 +163,8 @@ footer {
  }
 
 p {
-  font-family: 'Work Sans', serif;
-  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 0;
-	margin-bottom: 1rem;
 }
 
 h1,
@@ -168,23 +173,10 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: 'Oswald', sans-serif;
   margin-bottom: .5rem;
 }
-h1 {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-}
-h2 {
-  font-family: 'Oswald', sans-serif;
-/*  font-size: 1.1rem;*/
-  letter-spacing: 1px;
-}
 
-h3 {
-  font-family: 'Oswald', sans-serif;
-/*  font-size: 1.1rem;*/
-  letter-spacing: 1px;
-}
 a {
   color: #636363;
 }

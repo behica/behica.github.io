@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-{% assign post = site.posts.first %}
+{% assign post = site.posts %}
 <article>
   <div class="tc">
     <h2 class="hello">Hello, my name is Behiç.</h2>
     <p>/be-<span class="underline">HEECH</span>/</p>
-    <p>I am a sales ops leader who tinkers in web development. Over the years, I've mentored people, built processes, transitioned CRMs, provided trainings, modeled data, and made sure we were doing it the best way possible. I wanted to get in the world of creating the code behind experiences with technology. Welcome to my journey.</p>
+    <p>I am a sales ops leader who writes, takes photos, and tinkers in web development. Over the years, I've mentored people, built processes, transitioned CRMs, provided trainings, modeled data, and made sure it was done it the best way possible. I want to share my creative experiences with the world. Welcome to my journey.</p>
   </div>
-  <div class="mw9 center">
+  <!-- <div class="mw9 center">
    <div class="cf ph1-ns">
     <div class="fl w-100 w-third-ns pa2 tc">
       <i class="blue fa fa-code"></i>
@@ -22,11 +22,15 @@ layout: default
       <i class="green fa fa-level-up" aria-hidden="true"></i>
       <p class="f7">A former hobbyist, I completed <a href="http://bloc.io">Bloc's</a> web development curriculum to level up my skills.</p>
     </div>
-  </div>
-</div>
+   </div>
+  </div> -->
   <hr>
+  <h2>Recent Posts</h2><br/>
+  {% for post in site.posts offset: 0 limit: 3 %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
-  <p>{{ post.excerpt | truncatewords: 50 }}</p>
+  <p>{{ post.excerpt }}</p>
   <p class="f7"><a href="{{ post.url }}">Read full post</a></p>
+  <br/>
+  {% endfor %}
 </article>
