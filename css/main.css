@@ -2,8 +2,6 @@
  * Global
  */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url('https://fonts.googleapis.com/css?family=Quattrocento');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -13,12 +11,10 @@
 	box-sizing: border-box;
 }
 html, body {
-	font-size: 1em;
 	background-color: #fdfdfd;
 	line-height: 1.5;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  font-family: 'Lato', sans-serif;
+	text-rendering: geometricPrecision;
 }
 
 img {
@@ -35,7 +31,6 @@ img {
 }
 
 .post_preview {
-
 	max-width: 60%
 }
 
@@ -74,7 +69,7 @@ footer {
  */
 
 .nav {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	overflow: hidden;
 	margin: auto;
 	width: 100%;
@@ -95,36 +90,23 @@ footer {
 	padding: 10px 15px;
 }
 
-/* .nav a:hover {
-	text-decoration: none;
-}
-
-.nav a:before {
-	content: '';
-  position: relative;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #F00;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-} */
-
 /*
  * Typography
  */
+
  .hello {
 	 margin-top: 0;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+ 	font-family: 'Oswald', sans-serif;
+   margin-bottom: 0.5rem;
+ 	letter-spacing: 0.5px;
  }
 
  h1 a, h2 a, h3 a {
@@ -162,38 +144,25 @@ footer {
    transform: scaleX(1);
  }
 
-p {
-  font-family: 'Montserrat', sans-serif;
-  margin-top: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Oswald', sans-serif;
-  margin-bottom: .5rem;
-}
-
 a {
   color: #636363;
 }
+
 ol li,
 ul li {
   font-family: 'Open sans', sans-serif;
   margin: 0.5em;
 }
+
 blockquote p{
   border-left: solid 5px #f00;
-	border-top: solid 2px #f00;
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   line-height: 1.35;
   padding-left: .75rem;
   padding-right: .75rem;
 }
+
 hr {
 	border-top: 2px solid #E7E7E7;
 	border-bottom: none;
