@@ -94,6 +94,10 @@ footer {
  * Typography
  */
 
+ p {
+	 font-size: 18px;
+ }
+
  .hello {
 	 margin-top: 0;
  }

@@ -6,9 +6,9 @@ collections:
   posts:
     output: true
     permalink: /posts/:path/
-  portfolio:
+  projects:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /projects/:path/
 
 # Site settings
 title: BehicAkgun.com
