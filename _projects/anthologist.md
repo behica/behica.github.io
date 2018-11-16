@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Anthologist
 description: Anthologist is a place to write, read, and collect short stories. Connect with a community of writers. Earn badges and achievemnts for your activity.
 image: "/img/anthologist.jpg"
@@ -10,9 +10,6 @@ image: "/img/anthologist.jpg"
 Anthologist aims to be a place for short story fans to read, write, and collect / build their own anthologies.
 
 You can see it in action here --> [Anthologist](https://anthologist.herokuapp.com)
-
-{:.center}
-<a href="https://anthologist.herokuapp.com">![Anthologist home page]({{ site.baseurl }}/img/anthologist.jpg)</a>
 
 ## About
 

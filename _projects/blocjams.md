@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Bloc Jams
 description: Bloc Jams is a personal music player similar written in AngularJS.
 image: "/img/bj-ng/BJng-homepage.PNG"
@@ -10,9 +10,6 @@ image: "/img/bj-ng/BJng-homepage.PNG"
 The origin of Bloc Jams was to build a digital music player (ex. Spotify, Google Music) as a method to learning frontend web development.
 
 You can see it in action here --> [BlocJams](https://milodi.herokuapp.com/)*
-
-{:.center}
-![]({{ site.baseurl }}/img/bj-ng/BJng-homepage.PNG)
 
 ## About
 

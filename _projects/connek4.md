@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Connek4
 description: A Connect Four clone demonstrating jQuery, made within a couple of hours for an assignment given without detailed requirements.
 image: "/img/connek4.PNG"
@@ -9,8 +9,6 @@ image: "/img/connek4.PNG"
 Connek 4 was built to fulfill a learning assignment where the only requirement was to "Build a [Connect Four](https://en.wikipedia.org/wiki/Connect_Four) app within 24 hours." Plus, I have many fond memories of playing this game in a miniaturized version on road trips and random gatherings. Now I can play it anywhere again, without losing any pieces!
 
 Did I mention how fun it is? You can see it in action here --> [Connek4](/connek4.html)
-
-![]({{ site.baseurl }}/img/connek4.PNG)
 
 ## Explanation
 
