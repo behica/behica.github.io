@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="mw8 center">
+  <h1 class="ph3 ph0-1">Posts</h1>
+  {% for post in site.posts %}
+  <article class="bt bb b--black-10">
+    <a class="db pv4 ph3 ph0-1 no-underline dim" href="{{ post.url }}">
+      <div class="flex flex-column flex-row-ns">
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          {% if post.image %}
+          <img src="{{post.image}}">
+          {% endif %}
+        </div>
+        <div class="w-100 w-60-ns pl3-ns">
+          <h1 class="mt0 lh-title">{{ post.title }}</h1>
+          <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <p>{{ post.description }}</p>
+          <p class="f7">Read full post</p>
+        </div>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</section>

@@ -1,0 +1,27 @@
+---
+layout: page
+permalink: /projects/
+order: 1
+---
+<section class="mw8 center">
+  <h1 class="ph3 ph0-1">Projects</h1>
+  <p class="ph3 ph0-1">You can see more of my work by visiting my <a href="https://github.com/behica">GitHub profile</a>.</p>
+
+{% for project in site.projects %}
+  <article class="bt bb b--black-10">
+    <a class="db pv4 ph3 ph0-1 no-underline dim" href="{{ project.url }}">
+      <div class="flex flex-column flex-row-ns">
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          {% if project.image %}
+          <img src="{{project.image}}">
+          {% endif %}
+        </div>
+        <div class="w-100 w-60-ns pl3-ns">
+          <h1 class="mt0 lh-title">{{ project.title }}</h1>
+          <p>{{ project.description }}</p>
+        </div>
+      </div>
+    </a>
+  </article>
+{% endfor %}
+</section>

@@ -2,19 +2,21 @@
 layout: default
 ---
 {% assign post = site.posts %}
-<article>
-  <div>
-    <h1 class="hello tc">Hello, my name is Behiç.</h1>
-    <p class="tc">/be-<span class="underline">HEECH</span>/</p>
-    <p>I am a sales ops leader who writes, takes photos, and tinkers in web development. Over the years, I've mentored people, built processes, launched and enhanced CRMs, provided trainings, modeled data, and made sure it was done in the best way possible. I want to share my creative experiences with the world. Welcome to my journey.</p>
+<div class="vh-75 dt w-100 tc cover" style="background:url(/img/moonrise.jpg) no-repeat top left;">
+  <div class="dtc v-mid white center">
+    <h1>Hello, my name is Behiç.</h1>
+    <p>/be-<span class="underline">HEECH</span>/</p>
+    <p class="w-75 center">I write, take photos, and tinker in web development. Welcome to my journey.</p>
   </div>
-  <hr>
-  <h1>Recent Posts</h1><br/>
+</div>
+<div class="center measure-wide ph3 pv3 bb b--black-10">
+  <h1>Recent Posts</h1>
+  <hr class="pa0 ma0">
   {% for post in site.posts offset: 0 limit: 3 %}
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
   <p>{{ post.excerpt }}</p>
   <p class="f7"><a href="{{ post.url }}">Read full post</a></p>
-  <br/>
+  <br />
   {% endfor %}
-</article>
+</div>

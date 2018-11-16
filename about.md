@@ -1,12 +1,9 @@
 ---
-layout: page
+layout: about
 title: About Behiç
 permalink: /about/
-order: 2
 ---
-<div class="tc pb3">
-  <img class="pa4 mw5-ns br-100 fl" src="/img/behic.jpg">
-</div>
+I am a sales operations leader who writes, takes photos, and tinkers in web development. Over the years, I've mentored people, built processes, launched and enhanced CRMs, provided trainings, modeled data, and made sure it was done in the best way possible. I want to share my creative experiences with the world.
 
 In January of 2017, I began my apprenticeship in [Bloc's](https://bloc.io) full-stack web developer program. Interactive technology has always captured my imagination -- from my cousin's C64 to running my first BBS to building system requirements which would impact thousands of associates, and so much more.
 

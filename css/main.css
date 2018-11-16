@@ -2,8 +2,9 @@
  * Global
  */
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 
 * {
 	-webkit-box-sizing: border-box;
@@ -12,16 +13,7 @@
 }
 html, body {
 	background-color: #fdfdfd;
-	line-height: 1.5;
-  font-family: 'Lato', sans-serif;
-	text-rendering: geometricPrecision;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 3px;
-  vertical-align: middle;
+  font-family: 'Open sans', Helvetica, sans-serif;
 }
 
 .half-size {
@@ -30,17 +22,11 @@ img {
   max-width: 40%
 }
 
-.post_preview {
-	max-width: 60%
-}
-
 /* Icons */
 .footer .fa {
-  font-size: 2em;
-	padding-right: 20px;
+  font-size: 2.5em;
+	padding-right: 30px;
   text-decoration: none;
-	margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /*
@@ -49,19 +35,15 @@ img {
 
 .container {
   padding: 20px;
-  max-width: 760px;
-  margin-right: auto;
-  margin-left: auto;
+	max-width: 800px;
+	margin: auto;
 }
 
-.content {
-	padding-top: 5%;
-}
 
-footer {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	text-align: center;
+
+.postTitle {
+	max-width: 960px;
+	margin: auto;
 }
 
 /*
@@ -71,11 +53,8 @@ footer {
 .nav {
 	font-family: 'Montserrat', sans-serif;
 	overflow: hidden;
-	margin: auto;
 	width: 100%;
-	text-align: center;
 	background-color: #fdfdfd;
-	transition: top 0.3s;
 }
 
 .nav .icon {
@@ -86,7 +65,6 @@ footer {
 	display: inline;
 	text-decoration: none;
   color: #222;
-	text-align: center;
 	padding: 10px 15px;
 }
 
@@ -95,11 +73,10 @@ footer {
  */
 
  p {
-	 font-size: 18px;
- }
-
- .hello {
-	 margin-top: 0;
+	 font-family: 'Open sans';
+	 font-size: 16px;
+	 letter-spacing: 0.25px;
+	 line-height: 1.5;
  }
 
  h1,
@@ -109,8 +86,7 @@ footer {
  h5,
  h6 {
  	font-family: 'Oswald', sans-serif;
-   margin-bottom: 0.5rem;
- 	letter-spacing: 0.5px;
+ 	letter-spacing: 0.1px;
  }
 
  h1 a, h2 a, h3 a {
@@ -193,6 +169,9 @@ pre {
 .highlighter-rouge { font-size: .95em; background-color: #f1f1f1; }
 
 @media screen and (max-width: 600px) {
+	p {
+		font-size: 1em;
+	}
 	.nav a:not(.icon) {display: none; }
 	.nav a.icon {
 		float: right;
@@ -200,9 +179,6 @@ pre {
 		text-decoration: none;
 		padding-bottom: 0;
 	}
-}
-
-@media screen and (max-width: 600px) {
 	.nav.responsive {position: relative;}
 	.nav.responsive a.icon {
 		position: relative;

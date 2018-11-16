@@ -2,7 +2,7 @@
 layout: page
 title: Anthologist
 description: Anthologist is a place to write, read, and collect short stories. Connect with a community of writers. Earn badges and achievemnts for your activity.
-thumbnail: "/img/anthologist.jpg"
+image: "/img/anthologist.jpg"
 ---
 
 ## Summary
