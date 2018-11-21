@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bloc Jams
-description: Bloc Jams is a personal music player similar written in AngularJS.
+description: Bloc Jams is a web based music player written in AngularJS.
 image: "/img/bj-ng/BJng-homepage.PNG"
 ---
 
