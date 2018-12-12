@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rocky Mountain Natl Park Day Trip"
+title:  "Reflecting on the Rockies - RMNP Day Trip"
 description: "Reflecting on a recent trip to Rocky Mountain National Park. Thoughts from a lifelong flatlander and his budding love affair with the mountains. Photos from a recent December trip within."
 image: "/img/rmnp_title.jpg"
 ---
