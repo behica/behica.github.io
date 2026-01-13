@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behiç Akgün | Operator & Explorer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        'brand-orange': '#EA580C', // Matches RevvedOps
+                        'brand-dark': '#111827',   // Matches RevvedOps
+                        'brand-gray': '#6B7280',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* The "Performance Grid" Animation from RevvedOps */
+        @keyframes moveGrid {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .performance-grid {
+            position: relative;
+            overflow: hidden;
+        }
+        .performance-grid::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            /* Faint grid lines */
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 4rem 4rem;
+            opacity: 0.3;
+            z-index: 0;
+            animation: moveGrid 30s linear infinite alternate;
+        }
+        /* Hover effects */
+        .btn-hover { transition: all 0.2s ease; }
+        .btn-hover:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body class="h-screen flex flex-col md:flex-row m-0 p-0 overflow-hidden">
+
+    <div class="flex-1 relative bg-brand-dark text-white flex flex-col justify-center px-8 md:px-20 performance-grid border-b md:border-b-0 md:border-r border-gray-800">
+        <div class="relative z-10 max-w-lg">
+            <span class="text-brand-orange font-bold tracking-widest text-xs uppercase mb-3 block">The Operator</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight">
+                Behiç Akgün
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl leading-relaxed mb-8 font-light">
+                Founder of <strong class="text-white">RevvedOps</strong>. I build scalable revenue engines for high-growth SaaS companies.
+            </p>
+            
+            <a href="https://www.revvedops.io" class="inline-block bg-brand-orange text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-orange-700 btn-hover transition-colors">
+                Visit RevvedOps.io &rarr;
+            </a>
+        </div>
+    </div>
+
+    <div class="flex-1 bg-slate-50 text-slate-800 flex flex-col justify-center px-8 md:px-20 relative">
+        <div class="max-w-lg">
+            <span class="text-slate-400 font-serif italic text-sm mb-3 block">The Time Capsule</span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4 text-slate-900">
+                The Archive
+            </h2>
+            <p class="text-slate-600 font-serif text-lg leading-relaxed mb-8">
+                Reflections from the Rockies, photography, and coding experiments. A quiet corner of the web for my non-work self.
+            </p>
+
+            <a href="/archive.html" class="inline-block border-2 border-slate-900 text-slate-900 font-serif font-bold py-3 px-6 rounded hover:bg-slate-900 hover:text-white btn-hover transition-colors">
+                Enter the Archive
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
