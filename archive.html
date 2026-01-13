@@ -1,7 +1,9 @@
 ---
 layout: default
+permalink: /archive/
 ---
 {% assign post = site.posts %}
+
 <div class="vh-75 dt w-100 tc cover" style="background:url(/img/moonrise.jpg) no-repeat top left;">
   <div class="dtc v-mid white center">
     <h1>Hello, my name is Behiç.</h1>
@@ -9,10 +11,12 @@ layout: default
     <p class="w-75 center">I write, take photos, and tinker in web development. Welcome to my journey.</p>
   </div>
 </div>
+
 <div class="center measure pa3 bb b--black-10">
   <h1>Recent Posts</h1>
   <hr class="pa0 ma0">
-  {% for post in site.posts offset: 0 limit: 3 %}
+  
+  {% for post in site.posts offset: 0 limit: 50 %}
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
   <p class="f5">{{ post.description }}</p>
